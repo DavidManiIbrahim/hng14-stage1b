@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1B - Profile Card</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-layout" data-testid="test-page-layout">
+      <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
+        <figure class="profile-avatar-wrap" data-testid="test-user-avatar-wrap">
+          <img
+            src="https://avatars.githubusercontent.com/u/154742008?s=400&u=8aa777cd0135b7aa5218042cea9888bed38b990f&v=4"
+            alt="Portrait of David Mani Ibrahim smiling outdoors"
+            class="profile-avatar"
+            data-testid="test-user-avatar"
+          />
+          <figcaption data-testid="test-user-avatar-caption">David Mani Ibrahim</figcaption>
+        </figure>
+
+        <div class="profile-content" data-testid="test-user-content">
+          <header class="profile-header" data-testid="test-user-header">
+            <h2 id="profile-name" data-testid="test-user-name">David Mani Ibrahim</h2>
+            <p
+              class="profile-time"
+              data-testid="test-user-time"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              0
+            </p>
+          </header>
+
+          <section class="profile-section" data-testid="test-user-bio-section" aria-label="Biography">
+            <h2 class="section-title" data-testid="test-user-bio-title">Bio</h2>
+            <p data-testid="test-user-bio">
+              Frontend developer with a passion to make user interfaces approachable, inclusive, and performant. I am fond of design systems, clean architecture, and life-long learning.   </p>
+          </section>
+
+          <nav
+            class="profile-section"
+            aria-label="Social media links"
+            data-testid="test-user-social-links"
+          >
+            <h2 class="section-title" data-testid="test-user-social-title">Social Links</h2>
+            <ul class="chip-list" data-testid="test-user-social-list-items">
+              <li>
+                <a
+                  href="https://github.com/DavidManiIbrahim"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-github"
+                >
+                  <svg class="social-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.1-3.2-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.2 1.2a10.8 10.8 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.9 1.1 1.9 1.1 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"
+                    ></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/ibrahimdavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-linkedin"
+                >
+                  <svg class="social-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.5v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.5v6.3ZM5.2 7.4a2.1 2.1 0 1 1 0-4.3 2.1 2.1 0 0 1 0 4.3ZM7 20.5H3.4V9H7v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0Z"
+                    ></path>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/Mhanee001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-twitter"
+                >
+                  <svg class="social-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.3-8.4L1 2h6.3L11.6 8l5.3-6ZM17.8 20h1.7L6.4 3.9H4.6L17.8 20Z"
+                    ></path>
+                  </svg>
+                  <span>twitter</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="profile-section" data-testid="test-user-hobbies" aria-label="Hobbies">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="chip-list" data-testid="test-user-hobbies-list">
+              <li>Web development</li>
+              <li>Mobile development</li>
+              <li>UI/UX design</li>
+              <li>Game development</li>
+              <li>Data science</li>
+              <li>AI/ML</li>
+              <li>Blockchain</li>
+              <li>Cybersecurity</li>
+              <li>DevOps</li>
+              <li>Cloud computing</li>
+            </ul>
+          </section>
+
+          <section class="profile-section" data-testid="test-user-dislikes" aria-label="Dislikes">
+            <h2 class="section-title">Dislikes</h2>
+            <ul class="chip-list" data-testid="test-user-dislikes-list">
+              <li>Unreadable docs</li>
+              <li>Inaccessible interfaces</li>
+              <li>Unclear requirements</li>
+              <li>Bad documentation</li>
+              <li>Slow loading times</li>
+              <li>Poor performance</li>
+              <li>Poor user experience</li>
+              <li>Poor user interface</li>
+              <li>Poor user interaction</li>
+              <li>Poor user feedback</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

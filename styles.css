@@ -1,0 +1,147 @@
+:root {
+  --bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --text: #111827;
+  --muted: #374151;
+  --chip-bg: #e5e7eb;
+  --focus: #2563eb;
+  --shadow: 0 12px 26px rgba(17, 24, 39, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.page-layout {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.profile-card {
+  width: min(430px, 100%);
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.profile-avatar-wrap {
+  margin: 0;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: min(260px, 70vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #d1d5db;
+}
+
+.profile-avatar-wrap figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.profile-content {
+  display: grid;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  align-items: center;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+.profile-header h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
+}
+
+.profile-time {
+  font-weight: 700;
+  color: #1d4ed8;
+  word-break: break-all;
+}
+
+.profile-section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.chip-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-list li,
+.chip-list a {
+  background: var(--chip-bg);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  color: #111827;
+  text-decoration: none;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.social-logo {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+a:hover {
+  background: #d1d5db;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    width: min(460px, 100%);
+  }
+}
